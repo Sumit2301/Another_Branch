@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 New this is inside Master
+=======
+This is inside New_Master(The one inwhich going to rebase)
+>>>>>>> 458acc5 (New Master's One Same file at 10:27)
