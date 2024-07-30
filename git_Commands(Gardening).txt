@@ -1,0 +1,61 @@
+Gardening Commands
+Clean Up Untracked Files and Directories
+
+git clean -f
+
+
+
+Remove untracked directories (in addition to files):
+git clean -fd
+
+Remove untracked files and directories interactively:
+git clean -i
+
+
+Prune Old References
+
+Remove unreachable objects from the object database:
+git gc --prune=now
+
+Remove expired reflog entries and optimize the repository:
+git reflog expire --expire=now --all-ref
+git gc --prune=now
+
+
+Rebase to Clean Up Commits
+
+Rebase interactively to clean up or combine commits:
+git rebase -i <base-commit>
+
+Remove Local Branches
+
+Delete a local branch:
+git branch -d branch-name
+
+Force delete a local branch (use with caution):
+git branch -D branch-name
+
+Remove Remote Branches
+
+Delete a remote branch:
+git push origin --delete branch-name
+
+
+Cloning Commands
+To clone repositories, you'll use the git clone command. Here’s how you can use it:
+
+Clone a Repository
+
+Clone a repository from a remote URL:
+git clone <repository-url>
+
+git clone https://github.com/user/repo.git
+
+
+Clone a Repository with a Specific Branch
+
+Clone a repository and check out a specific branch:
+git clone -b branch-name <repository-url>
+
+
+git clone -b develop https://github.com/user/repo.git
