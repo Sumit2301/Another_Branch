@@ -1,2 +1,3 @@
 This file belongs to 
 Hello it is 10.04 and applying new commit 
+Now the thing is user need to add new file
